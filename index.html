@@ -526,7 +526,7 @@ function showResults(){
   // Reporte texto
   const now=new Date();
   const fecha=now.toLocaleDateString('es-CO',{year:'numeric',month:'long',day:'numeric'});
-  let r='REPORTE DE DIAGNÓSTICO — HERRAMIENTAS OFIMÁTICAS ADMINISTRATIVAS\n'+'='.repeat(58)+'\n';
+  let r='REPORTE DE DIAGNÓSTICO — HERRAMIENTAS OFIMÁTICAS\n'+'='.repeat(58)+'\n';
   r+=`Estudiante    : ${studentName}\nCorreo        : ${studentEmail}\nFecha         : ${fecha}\nNivel general : ${gl.label}\n`+'-'.repeat(58)+'\n';
   r+='RESULTADOS POR MÓDULO\n';
   Object.keys(MODULE_IDS).forEach(m=>{ r+=`  • ${m.padEnd(35)} ${levels[m].label}\n`; });
